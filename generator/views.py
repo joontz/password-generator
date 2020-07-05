@@ -9,7 +9,6 @@ def home(request):
 
 
 def password(request):
-
     characters = list('abcdefhijklmopmqrstuvwxyz')
 
     if request.GET.get('uppercase'):
@@ -18,7 +17,6 @@ def password(request):
         characters.extend(list('!@#$%^&*()_+-='))
     if request.GET.get('numbers'):
         characters.extend(list('1234567890'))
-
 
     length = int(request.GET.get('length', 12))
 
